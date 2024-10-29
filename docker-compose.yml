@@ -10,7 +10,7 @@ services:
       - "80:80/tcp"
     environment:
       TZ: 'Asia/Jerusalem'
-      WEBPASSWORD: ${PIHOLE_PASSWORD}
+      WEBPASSWORD: ${PIHOLE_ADMIN_PASSWORD}
     volumes:
       - './etc-pihole:/etc/pihole'
       - './etc-dnsmasq.d:/etc/dnsmasq.d'
